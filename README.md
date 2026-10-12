@@ -1,2 +1,2 @@
-# sistem-pendukung-keputusan
+# spk-cisas
 Sistem Pendukung Keputusan Penentuan Prioritas Pemeliharaan Motor Mesin MIxer
