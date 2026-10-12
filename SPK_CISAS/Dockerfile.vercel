@@ -2,10 +2,10 @@ FROM php:8.3-cli
 
 WORKDIR /app
 
-RUN docker-php-ext-install pdo_sqlite sqlite3
-
 COPY . /app
 
 RUN chmod -R 777 /app/database
+
+RUN php -m | grep -Ei 'PDO|pdo_sqlite|sqlite3'
 
 CMD ["sh", "-c", "php -S 0.0.0.0:${PORT} -t public"]
