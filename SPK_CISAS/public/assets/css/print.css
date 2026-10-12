@@ -1,0 +1,1299 @@
+@page {
+    size: A4 landscape;
+    margin: 12mm;
+}
+@media print {
+    html,
+    body {
+        width: auto;
+        min-width: 0;
+        min-height: 0;
+        margin: 0;
+        padding: 0;
+        color: #000000 !important;
+        background: #ffffff !important;
+        font-family:
+            "Times New Roman",
+            Times,
+            serif;
+        font-size: 10.5pt;
+        line-height: 1.35;
+    }
+    body {
+        overflow: visible !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        color: #000000 !important;
+        text-shadow: none !important;
+        box-shadow: none !important;
+        animation: none !important;
+        transition: none !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    #top-navbar,
+    #mainSidebar,
+    footer,
+    .offcanvas,
+    .offcanvas-backdrop,
+    .modal,
+    .modal-backdrop,
+    .dropdown-menu,
+    .toast-container,
+    .alert-container,
+    .pagination,
+    .breadcrumb,
+    .btn,
+    button,
+    form,
+    .no-print,
+    .d-print-none,
+    [data-print],
+    [data-bs-toggle],
+    [data-bs-dismiss] {
+        display: none !important;
+    }
+    .print-only,
+    .d-print-block {
+        display: block !important;
+    }
+    .d-print-inline {
+        display: inline !important;
+    }
+    .d-print-inline-block {
+        display: inline-block !important;
+    }
+    .d-print-flex {
+        display: flex !important;
+    }
+    .d-print-table {
+        display: table !important;
+    }
+    .d-print-table-row {
+        display: table-row !important;
+    }
+    .d-print-table-cell {
+        display: table-cell !important;
+    }
+    #main-content,
+    main,
+    .container,
+    .container-fluid {
+        display: block !important;
+        width: 100% !important;
+        max-width: none !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: visible !important;
+    }
+    .d-lg-flex,
+    .flex-grow-1 {
+        display: block !important;
+    }
+    .row {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+    .row > * {
+        padding-right: 1.5mm !important;
+        padding-left: 1.5mm !important;
+    }
+    .print-document-header {
+        display: block !important;
+        margin-bottom: 8mm;
+        padding-bottom: 4mm;
+        border-bottom: 2px solid #000000;
+        text-align: center;
+        break-inside: avoid-page;
+        page-break-inside: avoid;
+    }
+    .print-document-header h1,
+    .print-document-header h2,
+    .print-document-header h3 {
+        margin: 0 0 2mm;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+    .print-document-header p {
+        margin: 0;
+    }
+    .print-company-name {
+        font-size: 14pt;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .print-system-name {
+        margin-top: 1mm;
+        font-size: 11pt;
+        font-weight: 600;
+    }
+    .print-report-title {
+        margin-top: 5mm !important;
+        font-size: 13pt;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .print-report-subtitle {
+        margin-top: 1mm !important;
+        font-size: 10.5pt;
+    }
+    .page-header {
+        margin-bottom: 5mm;
+    }
+    .page-title,
+    h1 {
+        margin: 0 0 3mm;
+        font-size: 15pt;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+    h2 {
+        margin: 5mm 0 2mm;
+        font-size: 13pt;
+        font-weight: 700;
+        line-height: 1.25;
+    }
+    h3 {
+        margin: 4mm 0 2mm;
+        font-size: 11.5pt;
+        font-weight: 700;
+        line-height: 1.25;
+    }
+    h4,
+    h5,
+    h6 {
+        margin: 3mm 0 1.5mm;
+        font-size: 10.5pt;
+        font-weight: 700;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        break-after: avoid-page;
+        page-break-after: avoid;
+    }
+    p {
+        orphans: 3;
+        widows: 3;
+    }
+    .page-description,
+    .text-body-secondary,
+    .text-secondary,
+    .text-muted {
+        color: #333333 !important;
+    }
+    .card {
+        display: block;
+        margin: 0 0 5mm;
+        padding: 0;
+        border: 1px solid #555555 !important;
+        border-radius: 0 !important;
+        background: #ffffff !important;
+        box-shadow: none !important;
+    }
+    .card-header {
+        padding: 2.5mm 3mm;
+        border-bottom: 1px solid #555555 !important;
+        border-radius: 0 !important;
+        background: #eeeeee !important;
+        font-weight: 700;
+        break-after: avoid-page;
+        page-break-after: avoid;
+    }
+    .card-body {
+        padding: 3mm !important;
+        background: #ffffff !important;
+    }
+    .card-footer {
+        padding: 2.5mm 3mm;
+        border-top: 1px solid #555555 !important;
+        background: #ffffff !important;
+    }
+    .shadow,
+    .shadow-sm,
+    .shadow-lg {
+        box-shadow: none !important;
+    }
+    .dashboard-welcome,
+    .bg-primary,
+    .bg-primary-subtle,
+    .bg-body-tertiary,
+    .bg-white {
+        color: #000000 !important;
+        background: #ffffff !important;
+    }
+    .dashboard-welcome {
+        border: 1px solid #555555 !important;
+    }
+    .dashboard-welcome::before,
+    .dashboard-welcome::after,
+    .summary-card::after {
+        display: none !important;
+    }
+    .display-1,
+    .display-2,
+    .display-3,
+    .display-4,
+    .display-5,
+    .display-6 {
+        font-size: 16pt !important;
+    }
+    .metric-box {
+        margin-bottom: 3mm;
+        padding: 3mm;
+        border: 1px solid #777777 !important;
+        border-radius: 0 !important;
+        background: #ffffff !important;
+        break-inside: avoid-page;
+        page-break-inside: avoid;
+    }
+    .table-responsive {
+        width: 100% !important;
+        overflow: visible !important;
+        border-radius: 0 !important;
+    }
+    table,
+    .table {
+        width: 100% !important;
+        margin: 0 0 5mm;
+        border-collapse: collapse !important;
+        border-spacing: 0;
+        color: #000000 !important;
+        font-size: 8.5pt;
+        line-height: 1.25;
+    }
+    table thead,
+    .table thead {
+        display: table-header-group !important;
+    }
+    table tfoot,
+    .table tfoot {
+        display: table-footer-group !important;
+    }
+    table tr,
+    .table tr {
+        break-inside: avoid-page;
+        page-break-inside: avoid;
+    }
+    table th,
+    table td,
+    .table th,
+    .table td {
+        padding: 1.5mm 1.8mm !important;
+        border: 1px solid #555555 !important;
+        color: #000000 !important;
+        background: #ffffff !important;
+        vertical-align: top;
+        overflow-wrap: anywhere;
+        word-break: normal;
+    }
+    table th,
+    .table th,
+    .table thead th {
+        color: #000000 !important;
+        background: #e6e6e6 !important;
+        font-size: 8.5pt;
+        font-weight: 700;
+        text-align: center;
+        text-transform: none;
+        letter-spacing: normal;
+    }
+    .table-light,
+    .table-light th,
+    .table-light td {
+        color: #000000 !important;
+        background: #e6e6e6 !important;
+    }
+    .table-hover > tbody > tr:hover > * {
+        background: #ffffff !important;
+    }
+    .table-actions,
+    th:last-child.table-actions,
+    td:last-child.table-actions {
+        display: none !important;
+    }
+    .matrix-table th,
+    .matrix-table td {
+        min-width: 0 !important;
+        padding: 1.2mm !important;
+        font-size: 7.5pt;
+        text-align: center;
+    }
+    .matrix-table th:first-child,
+    .matrix-table td:first-child {
+        position: static;
+        background: #ffffff !important;
+        box-shadow: none !important;
+    }
+    .badge,
+    .status-badge {
+        display: inline-block;
+        padding: 1mm 2mm;
+        color: #000000 !important;
+        background: #ffffff !important;
+        border: 1px solid #555555 !important;
+        border-radius: 2mm !important;
+        font-size: 8pt;
+        font-weight: 700;
+        line-height: 1.2;
+        white-space: normal;
+    }
+    .status-badge::before {
+        display: none;
+    }
+    .text-bg-primary,
+    .text-bg-secondary,
+    .text-bg-success,
+    .text-bg-warning,
+    .text-bg-danger,
+    .text-bg-info,
+    .text-bg-light,
+    .text-bg-dark {
+        color: #000000 !important;
+        background: #ffffff !important;
+    }
+    .alert {
+        margin: 0 0 4mm;
+        padding: 3mm;
+        color: #000000 !important;
+        background: #ffffff !important;
+        border: 1.5px solid #555555 !important;
+        border-radius: 0 !important;
+        break-inside: avoid-page;
+        page-break-inside: avoid;
+    }
+    .alert-primary,
+    .alert-secondary,
+    .alert-success,
+    .alert-danger,
+    .alert-warning,
+    .alert-info,
+    .alert-light {
+        color: #000000 !important;
+        background: #ffffff !important;
+    }
+    .alert-danger,
+    .danger-indicator {
+        border: 2px solid #000000 !important;
+    }
+    .alert-warning,
+    .not-checked-indicator {
+        border: 1.5px dashed #000000 !important;
+    }
+    fieldset,
+    .fieldset-card {
+        margin: 0 0 5mm;
+        padding: 3mm;
+        border: 1px solid #555555 !important;
+        border-radius: 0 !important;
+        break-inside: avoid-page;
+        page-break-inside: avoid;
+    }
+    fieldset legend,
+    .fieldset-card legend {
+        padding: 0 2mm;
+        font-size: 10.5pt;
+        font-weight: 700;
+    }
+    .form-label {
+        margin-bottom: 1mm;
+        font-size: 9pt;
+        font-weight: 700;
+    }
+    .form-control,
+    .form-select,
+    textarea,
+    input,
+    select {
+        min-height: 0;
+        padding: 1.5mm 2mm;
+        color: #000000 !important;
+        background: #ffffff !important;
+        border: 1px solid #777777 !important;
+        border-radius: 0 !important;
+        font-family:
+            "Times New Roman",
+            Times,
+            serif;
+        font-size: 9pt;
+        box-shadow: none !important;
+        -webkit-appearance: none;
+        appearance: none;
+    }
+    textarea {
+        min-height: 15mm;
+        resize: none;
+    }
+    input[type="radio"],
+    input[type="checkbox"] {
+        -webkit-appearance: auto;
+        appearance: auto;
+        width: auto;
+        height: auto;
+    }
+    .form-text,
+    .invalid-feedback,
+    .valid-feedback {
+        font-size: 8pt;
+    }
+    .checklist-section {
+        margin-bottom: 5mm;
+    }
+    .checklist-item {
+        margin: 0 0 4mm;
+        border: 1px solid #555555 !important;
+        border-radius: 0 !important;
+        background: #ffffff !important;
+        break-inside: avoid-page;
+        page-break-inside: avoid;
+    }
+    .checklist-item-header {
+        padding: 2.5mm 3mm;
+        border-bottom: 1px solid #555555 !important;
+        background: #eeeeee !important;
+    }
+    .checklist-item-body {
+        padding: 3mm;
+    }
+    .checklist-code {
+        min-width: 10mm;
+        height: auto;
+        padding: 1mm 2mm;
+        color: #000000 !important;
+        background: #ffffff !important;
+        border: 1px solid #555555;
+        border-radius: 0;
+        font-size: 8pt;
+    }
+    .checklist-guide {
+        padding: 2mm 3mm;
+        border: 1px solid #777777;
+        border-left: 3px solid #000000;
+        border-radius: 0;
+        background: #ffffff !important;
+        font-size: 8.5pt;
+    }
+    .condition-options {
+        display: grid !important;
+        grid-template-columns:
+            repeat(5, 1fr);
+        gap: 1.5mm;
+    }
+    .condition-option {
+        display: block;
+    }
+    .condition-option input {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        opacity: 0;
+    }
+    .condition-option label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 12mm;
+        padding: 1.5mm;
+        color: #000000 !important;
+        background: #ffffff !important;
+        border: 1px solid #999999 !important;
+        border-radius: 0 !important;
+        font-size: 8pt;
+        text-align: center;
+    }
+    .condition-option input:checked + label {
+        border: 2px solid #000000 !important;
+        background: #dddddd !important;
+        font-weight: 700;
+    }
+    .condition-option input:not(:checked) + label {
+        color: #666666 !important;
+    }
+    .condition-option label small {
+        color: #333333 !important;
+    }
+    .danger-indicator,
+    .not-checked-indicator {
+        padding: 3mm;
+        color: #000000 !important;
+        background: #ffffff !important;
+        border-radius: 0 !important;
+    }
+    .measurement-card {
+        margin-bottom: 4mm;
+        border: 1px solid #555555 !important;
+        border-radius: 0 !important;
+        background: #ffffff !important;
+        break-inside: avoid-page;
+        page-break-inside: avoid;
+    }
+    .measurement-card-header {
+        padding: 2.5mm 3mm;
+        border-bottom: 1px solid #555555 !important;
+        background: #eeeeee !important;
+    }
+    .measurement-card-body {
+        padding: 3mm;
+    }
+    .calculated-value {
+        padding: 2.5mm;
+        border: 1px solid #555555 !important;
+        border-radius: 0 !important;
+        background: #ffffff !important;
+    }
+    .calculated-value strong {
+        color: #000000 !important;
+        font-size: 11pt;
+    }
+    .ahp-comparison-card {
+        margin: 0 0 4mm;
+        border: 1px solid #555555 !important;
+        border-radius: 0 !important;
+        background: #ffffff !important;
+        break-inside: avoid-page;
+        page-break-inside: avoid;
+    }
+    .ahp-scale-label {
+        color: #000000 !important;
+        background: #ffffff !important;
+        border: 1px solid #777777;
+        border-radius: 0;
+    }
+    .ranking-number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 8mm;
+        height: 8mm;
+        color: #000000 !important;
+        background: #ffffff !important;
+        border: 1px solid #000000;
+        border-radius: 50%;
+        font-size: 8pt;
+    }
+    .progress {
+        height: 5mm !important;
+        border: 1px solid #555555;
+        border-radius: 0;
+        background: #ffffff !important;
+    }
+    .progress-bar {
+        color: #000000 !important;
+        background: #cccccc !important;
+        border-right: 1px solid #555555;
+        font-size: 7pt;
+    }
+    .print-signature-section {
+        display: table !important;
+        width: 100%;
+        margin-top: 12mm;
+        table-layout: fixed;
+        break-inside: avoid-page;
+        page-break-inside: avoid;
+    }
+    .print-signature-column {
+        display: table-cell !important;
+        width: 50%;
+        padding: 0 8mm;
+        text-align: center;
+        vertical-align: top;
+    }
+    .print-signature-title {
+        margin-bottom: 22mm;
+    }
+    .print-signature-name {
+        display: inline-block;
+        min-width: 55mm;
+        padding-top: 1mm;
+        border-top: 1px solid #000000;
+        font-weight: 700;
+    }
+    .print-signature-position {
+        display: block;
+        margin-top: 1mm;
+        font-size: 9pt;
+    }
+    .print-meta {
+        display: flex !important;
+        justify-content: space-between;
+        gap: 5mm;
+        margin-bottom: 4mm;
+        font-size: 8.5pt;
+    }
+    .print-generated-at {
+        display: block !important;
+        margin-top: 6mm;
+        color: #333333 !important;
+        font-size: 8pt;
+        text-align: right;
+    }
+    .page-break-before,
+    .print-page-break-before {
+        break-before: page;
+        page-break-before: always;
+    }
+    .page-break-after,
+    .print-page-break-after {
+        break-after: page;
+        page-break-after: always;
+    }
+    .avoid-page-break,
+    .keep-together,
+    .print-avoid-break {
+        break-inside: avoid-page;
+        page-break-inside: avoid;
+    }
+    .allow-page-break {
+        break-inside: auto;
+        page-break-inside: auto;
+    }
+    a,
+    a:visited {
+        color: #000000 !important;
+        text-decoration: none !important;
+    }
+    a[href]::after {
+        content: none !important;
+    }
+    img {
+        max-width: 100% !important;
+        break-inside: avoid-page;
+        page-break-inside: avoid;
+    }
+    .report-identity {
+        margin-bottom: 5mm !important;
+        break-inside: avoid-page;
+        page-break-inside: avoid;
+    }
+    .report-section {
+        margin-bottom: 6mm !important;
+        overflow: visible !important;
+    }
+    .report-section .card-body {
+        overflow: visible !important;
+    }
+    .report-table {
+        width: 100% !important;
+        margin-bottom: 0 !important;
+        table-layout: auto;
+        font-size: 7.5pt !important;
+        line-height: 1.2 !important;
+    }
+    .report-table th,
+    .report-table td {
+        padding: 1.2mm 1.4mm !important;
+        overflow-wrap: anywhere;
+        word-break: normal;
+    }
+    .report-table thead {
+        display: table-header-group !important;
+    }
+    .report-table tfoot {
+        display: table-footer-group !important;
+    }
+    .report-table tr {
+        break-inside: avoid-page;
+        page-break-inside: avoid;
+    }
+    [aria-label="Ringkasan laporan pemeriksaan"],
+    [aria-label="Ringkasan laporan AHP"],
+    [aria-label="Ringkasan laporan TOPSIS"],
+    [aria-label="Ringkasan laporan peringkat"],
+    [aria-label="Ringkasan riwayat"],
+    [aria-label="Ringkasan tindak lanjut"] {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        margin-right: -1.5mm !important;
+        margin-left: -1.5mm !important;
+    }
+    [aria-label="Ringkasan laporan pemeriksaan"] > *,
+    [aria-label="Ringkasan laporan AHP"] > *,
+    [aria-label="Ringkasan laporan TOPSIS"] > *,
+    [aria-label="Ringkasan laporan peringkat"] > *,
+    [aria-label="Ringkasan riwayat"] > *,
+    [aria-label="Ringkasan tindak lanjut"] > * {
+        width: 33.333333% !important;
+        max-width: 33.333333% !important;
+        flex: 0 0 33.333333% !important;
+        padding-right: 1.5mm !important;
+        padding-left: 1.5mm !important;
+        margin-bottom: 3mm !important;
+        break-inside: avoid-page;
+        page-break-inside: avoid;
+    }
+    [aria-label="Ringkasan laporan pemeriksaan"] .card,
+    [aria-label="Ringkasan laporan AHP"] .card,
+    [aria-label="Ringkasan laporan TOPSIS"] .card,
+    [aria-label="Ringkasan laporan peringkat"] .card,
+    [aria-label="Ringkasan riwayat"] .card,
+    [aria-label="Ringkasan tindak lanjut"] .card {
+        height: 100% !important;
+        margin-bottom: 0 !important;
+        break-inside: avoid-page;
+        page-break-inside: avoid;
+    }
+    .report-identity .card-body {
+        padding: 4mm !important;
+    }
+    .report-identity p {
+        margin-bottom: 1mm;
+    }
+    .report-identity .badge {
+        margin-bottom: 2mm;
+    }
+    [aria-label="Pengesahan laporan"] {
+        display: block !important;
+        margin-top: 15mm !important;
+        break-inside: avoid-page;
+        page-break-inside: avoid;
+    }
+    [aria-label="Pengesahan laporan"] .row {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        width: 100% !important;
+    }
+    [aria-label="Pengesahan laporan"] .col-6 {
+        width: 50% !important;
+        max-width: 50% !important;
+        flex: 0 0 50% !important;
+        padding-right: 8mm !important;
+        padding-left: 8mm !important;
+        text-align: center;
+    }
+    .report-section .row {
+        display: flex !important;
+        flex-wrap: wrap !important;
+    }
+    .report-section .col-md-6 {
+        width: 50% !important;
+        max-width: 50% !important;
+        flex: 0 0 50% !important;
+    }
+    .report-section .col-md-4 {
+        width: 33.333333% !important;
+        max-width: 33.333333% !important;
+        flex: 0 0 33.333333% !important;
+    }
+    .report-section .col-md-3 {
+        width: 25% !important;
+        max-width: 25% !important;
+        flex: 0 0 25% !important;
+    }
+    .report-section .card-header,
+    .report-identity,
+    [aria-label="Pengesahan laporan"] {
+        break-after: avoid-page;
+        page-break-after: avoid;
+    }
+    [aria-labelledby="inspection-report-table-title"]
+        .report-table,
+    [aria-labelledby="decision-matrix-title"]
+        .report-table,
+    [aria-labelledby="normalized-matrix-title"]
+        .report-table,
+    [aria-labelledby="weighted-matrix-title"]
+        .report-table,
+    [aria-labelledby="topsis-result-title"]
+        .report-table,
+    [aria-labelledby="ranking-table-title"]
+        .report-table {
+        font-size: 7pt !important;
+    }
+    [aria-labelledby="inspection-report-table-title"]
+        .report-table th,
+    [aria-labelledby="inspection-report-table-title"]
+        .report-table td,
+    [aria-labelledby="decision-matrix-title"]
+        .report-table th,
+    [aria-labelledby="decision-matrix-title"]
+        .report-table td,
+    [aria-labelledby="normalized-matrix-title"]
+        .report-table th,
+    [aria-labelledby="normalized-matrix-title"]
+        .report-table td,
+    [aria-labelledby="weighted-matrix-title"]
+        .report-table th,
+    [aria-labelledby="weighted-matrix-title"]
+        .report-table td,
+    [aria-labelledby="topsis-result-title"]
+        .report-table th,
+    [aria-labelledby="topsis-result-title"]
+        .report-table td,
+    [aria-labelledby="ranking-table-title"]
+        .report-table th,
+    [aria-labelledby="ranking-table-title"]
+        .report-table td {
+        padding: 1mm !important;
+    }
+    .report-section + .alert.no-print,
+    main > .alert.no-print {
+        display: none !important;
+    }
+}
+
+/* ============================================================
+   Penyempurnaan tampilan laporan cetak PT CISAS
+   - kop laporan konsisten dengan logo perusahaan;
+   - hierarki judul lebih jelas;
+   - tabel lebih nyaman dibaca;
+   - identitas, ringkasan, dan pengesahan lebih rapi;
+   - tetap aman untuk A4 landscape dan print to PDF.
+   ============================================================ */
+
+@page {
+    size: A4 landscape;
+    margin: 11mm 12mm 12mm;
+}
+
+@media print {
+    body.report-page {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 9.5pt;
+        line-height: 1.38;
+    }
+
+    /* Kop laporan */
+    .report-page .print-report-header {
+        display: block !important;
+        margin: 0 0 5mm !important;
+        padding: 0 0 3.2mm !important;
+        border: 0 !important;
+        border-bottom: 2.2px solid #d71920 !important;
+        background: #ffffff !important;
+        text-align: left !important;
+        break-inside: avoid-page;
+        page-break-inside: avoid;
+    }
+
+    .report-page .print-report-brand-row {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        gap: 8mm !important;
+        padding: 0 0 2.6mm !important;
+        border-bottom: 0.7px solid #b8b8b8 !important;
+    }
+
+    .report-page .print-report-logo {
+        display: block !important;
+        width: 48mm !important;
+        max-width: 48mm !important;
+        max-height: 15mm !important;
+        margin: 0 !important;
+        object-fit: contain;
+        object-position: left center;
+    }
+
+    .report-page .print-report-brand-copy {
+        display: block !important;
+        flex: 1 1 auto !important;
+        text-align: right !important;
+        line-height: 1.25 !important;
+    }
+
+    .report-page .print-report-brand-copy strong {
+        display: block !important;
+        margin: 0 0 0.8mm !important;
+        font-size: 10.5pt !important;
+        font-weight: 700 !important;
+        letter-spacing: 0.15pt !important;
+    }
+
+    .report-page .print-report-brand-copy span {
+        display: block !important;
+        color: #4a4a4a !important;
+        font-size: 8.5pt !important;
+    }
+
+    .report-page .print-report-title-block {
+        margin-top: 3mm !important;
+        text-align: center !important;
+    }
+
+    .report-page .print-report-title-block h1 {
+        margin: 0 0 1mm !important;
+        font-size: 13.5pt !important;
+        font-weight: 700 !important;
+        line-height: 1.2 !important;
+        letter-spacing: 0.25pt !important;
+        text-transform: uppercase;
+    }
+
+    .report-page .print-report-title-block p {
+        margin: 0 !important;
+        color: #3d3d3d !important;
+        font-size: 8.8pt !important;
+        line-height: 1.3 !important;
+    }
+
+    .report-page .print-report-title-block .print-report-note {
+        margin-top: 1.2mm !important;
+        font-size: 8.2pt !important;
+        font-style: italic;
+    }
+
+    /* Identitas periode laporan */
+    .report-page .report-identity {
+        margin-bottom: 4.5mm !important;
+        border: 1px solid #bdbdbd !important;
+        border-left: 3px solid #d71920 !important;
+        background: #ffffff !important;
+    }
+
+    .report-page .report-identity .card-body {
+        padding: 3.2mm 4mm !important;
+    }
+
+    .report-page .report-identity h2 {
+        margin: 0 0 1.4mm !important;
+        font-size: 10.8pt !important;
+        line-height: 1.25 !important;
+    }
+
+    .report-page .report-identity p,
+    .report-page .report-identity .small {
+        font-size: 8.6pt !important;
+        line-height: 1.35 !important;
+    }
+
+    .report-page .report-identity .badge {
+        padding: 0.8mm 2mm !important;
+        border-color: #8c8c8c !important;
+        font-size: 7.8pt !important;
+    }
+
+    /* Kartu ringkasan */
+    .report-page [aria-label="Ringkasan laporan pemeriksaan"] .card,
+    .report-page [aria-label="Ringkasan laporan AHP"] .card,
+    .report-page [aria-label="Ringkasan laporan TOPSIS"] .card,
+    .report-page [aria-label="Ringkasan laporan peringkat"] .card,
+    .report-page [aria-label="Ringkasan riwayat"] .card,
+    .report-page [aria-label="Ringkasan tindak lanjut"] .card {
+        border: 1px solid #c7c7c7 !important;
+        border-top: 2px solid #d71920 !important;
+        background: #ffffff !important;
+    }
+
+    .report-page [aria-label="Ringkasan laporan pemeriksaan"] .card-body,
+    .report-page [aria-label="Ringkasan laporan AHP"] .card-body,
+    .report-page [aria-label="Ringkasan laporan TOPSIS"] .card-body,
+    .report-page [aria-label="Ringkasan laporan peringkat"] .card-body,
+    .report-page [aria-label="Ringkasan riwayat"] .card-body,
+    .report-page [aria-label="Ringkasan tindak lanjut"] .card-body {
+        padding: 2.5mm 3mm !important;
+    }
+
+    .report-page [aria-label^="Ringkasan laporan"] .h3,
+    .report-page [aria-label^="Ringkasan laporan"] .fs-3,
+    .report-page [aria-label^="Ringkasan laporan"] .fs-4 {
+        font-size: 12.5pt !important;
+        line-height: 1.15 !important;
+    }
+
+    .report-page [aria-label^="Ringkasan laporan"] p,
+    .report-page [aria-label^="Ringkasan laporan"] small {
+        font-size: 7.8pt !important;
+        line-height: 1.25 !important;
+    }
+
+    /* Bagian laporan */
+    .report-page .report-section {
+        margin-bottom: 4.8mm !important;
+        border: 1px solid #bcbcbc !important;
+        background: #ffffff !important;
+    }
+
+    .report-page .report-section .card-header {
+        padding: 2.3mm 3.4mm !important;
+        border: 0 !important;
+        border-left: 3px solid #d71920 !important;
+        border-bottom: 1px solid #c9c9c9 !important;
+        background: #f3f3f3 !important;
+    }
+
+    .report-page .report-section .card-header h2,
+    .report-page .report-section .card-header h3 {
+        margin: 0 0 0.7mm !important;
+        font-size: 10.4pt !important;
+        font-weight: 700 !important;
+        line-height: 1.2 !important;
+    }
+
+    .report-page .report-section .card-header p {
+        margin: 0 !important;
+        color: #4a4a4a !important;
+        font-size: 8pt !important;
+        line-height: 1.3 !important;
+    }
+
+    .report-page .report-section .card-body {
+        padding: 3.2mm !important;
+    }
+
+    .report-page .report-section .card-body.p-0 {
+        padding: 0 !important;
+    }
+
+    .report-page [aria-labelledby="top-priority-title"] {
+        border-left: 3px solid #d71920 !important;
+    }
+
+    /* Tabel utama laporan */
+    .report-page .report-table,
+    .report-page .report-sheet .table {
+        width: 100% !important;
+        margin: 0 !important;
+        border-collapse: collapse !important;
+        table-layout: auto;
+        font-family: Arial, Helvetica, sans-serif !important;
+        font-size: 8pt !important;
+        line-height: 1.28 !important;
+    }
+
+    .report-page .report-table th,
+    .report-page .report-table td,
+    .report-page .report-sheet .table th,
+    .report-page .report-sheet .table td {
+        padding: 1.35mm 1.55mm !important;
+        border: 0.7px solid #a9a9a9 !important;
+        vertical-align: top !important;
+        overflow-wrap: anywhere;
+        word-break: normal;
+    }
+
+    .report-page .report-table thead th,
+    .report-page .report-sheet .table thead th {
+        background: #ececec !important;
+        border-bottom: 1.2px solid #777777 !important;
+        font-size: 7.8pt !important;
+        font-weight: 700 !important;
+        line-height: 1.22 !important;
+        text-align: center;
+    }
+
+    .report-page .report-table tbody tr:nth-child(even) td,
+    .report-page .report-sheet .table tbody tr:nth-child(even) td {
+        background: #fafafa !important;
+    }
+
+    .report-page .report-table tbody tr,
+    .report-page .report-sheet .table tbody tr {
+        break-inside: avoid-page;
+        page-break-inside: avoid;
+    }
+
+    /* Tabel padat tetap dibuat lebih kecil agar tidak terpotong */
+    .report-page [aria-labelledby="inspection-report-table-title"] .report-table,
+    .report-page [aria-labelledby="decision-matrix-title"] .report-table,
+    .report-page [aria-labelledby="normalized-matrix-title"] .report-table,
+    .report-page [aria-labelledby="weighted-matrix-title"] .report-table,
+    .report-page [aria-labelledby="topsis-result-title"] .report-table,
+    .report-page [aria-labelledby="ranking-table-title"] .report-table {
+        font-size: 7.2pt !important;
+        line-height: 1.2 !important;
+    }
+
+    .report-page [aria-labelledby="inspection-report-table-title"] .report-table th,
+    .report-page [aria-labelledby="inspection-report-table-title"] .report-table td,
+    .report-page [aria-labelledby="decision-matrix-title"] .report-table th,
+    .report-page [aria-labelledby="decision-matrix-title"] .report-table td,
+    .report-page [aria-labelledby="normalized-matrix-title"] .report-table th,
+    .report-page [aria-labelledby="normalized-matrix-title"] .report-table td,
+    .report-page [aria-labelledby="weighted-matrix-title"] .report-table th,
+    .report-page [aria-labelledby="weighted-matrix-title"] .report-table td,
+    .report-page [aria-labelledby="topsis-result-title"] .report-table th,
+    .report-page [aria-labelledby="topsis-result-title"] .report-table td,
+    .report-page [aria-labelledby="ranking-table-title"] .report-table th,
+    .report-page [aria-labelledby="ranking-table-title"] .report-table td {
+        padding: 1mm 1.15mm !important;
+    }
+
+    /* Laporan akhir keputusan */
+    .report-page .report-sheet {
+        margin: 0 !important;
+        border: 0 !important;
+        background: #ffffff !important;
+    }
+
+    .report-page .report-sheet > .card-body {
+        padding: 0 !important;
+    }
+
+    .report-page .report-final-section {
+        margin: 0 0 5mm !important;
+    }
+
+    .report-page .report-final-section > h3,
+    .report-page .report-final-section > .d-flex h3 {
+        margin: 0 0 2.5mm !important;
+        padding: 0 0 1.2mm !important;
+        border-bottom: 1px solid #d71920 !important;
+        font-size: 10.8pt !important;
+        line-height: 1.2 !important;
+        break-after: avoid-page;
+        page-break-after: avoid;
+    }
+
+    .report-page .report-final-section .border.rounded,
+    .report-page .report-final-section .bg-body-tertiary {
+        border: 1px solid #bdbdbd !important;
+        border-radius: 0 !important;
+        background: #ffffff !important;
+    }
+
+    .report-page .report-final-section .row > * {
+        break-inside: avoid-page;
+        page-break-inside: avoid;
+    }
+
+    .report-page .report-final-section .fs-4,
+    .report-page .report-final-section .fs-5 {
+        font-size: 11pt !important;
+    }
+
+    /* Badge/status tidak terlalu menyerupai elemen UI saat dicetak */
+    .report-page .badge,
+    .report-page .status-badge {
+        padding: 0.7mm 1.8mm !important;
+        border: 0.7px solid #8e8e8e !important;
+        border-radius: 1mm !important;
+        background: #ffffff !important;
+        font-size: 7.5pt !important;
+        font-weight: 700 !important;
+    }
+
+    /* Pengesahan */
+    .report-page [aria-label="Pengesahan laporan"] {
+        margin-top: 9mm !important;
+        padding-top: 4mm !important;
+        border-top: 0.8px solid #a9a9a9 !important;
+    }
+
+    .report-page [aria-label="Pengesahan laporan"] .row {
+        align-items: flex-start !important;
+    }
+
+    .report-page [aria-label="Pengesahan laporan"] p {
+        font-size: 8.8pt !important;
+        line-height: 1.35 !important;
+    }
+
+    .report-page [aria-label="Pengesahan laporan"] p.mb-5 {
+        margin-bottom: 18mm !important;
+    }
+
+    .report-page [aria-label="Pengesahan laporan"] p.mb-0 strong {
+        display: inline-block !important;
+        min-width: 55mm !important;
+        padding: 0 4mm 1mm !important;
+        border-bottom: 0.8px solid #000000 !important;
+        font-weight: 700 !important;
+    }
+
+    .report-page .print-generated-at {
+        margin-top: 6mm !important;
+        color: #555555 !important;
+        font-size: 7.5pt !important;
+        text-align: right !important;
+    }
+
+    /* Jaga heading dan baris penting agar tidak menggantung di akhir halaman */
+    .report-page .card-header,
+    .report-page .report-final-section > h3,
+    .report-page .report-final-section > .d-flex {
+        break-after: avoid-page;
+        page-break-after: avoid;
+    }
+}
+
+/* ============================================================
+   Revisi cetak minimal - tanpa aksen garis merah dan tanpa badge
+   berbentuk kotak. Data, perhitungan, serta struktur tabel tetap.
+   ============================================================ */
+@media print {
+    /* Hilangkan seluruh aksen garis merah pada dokumen cetak. */
+    .report-page .print-report-header {
+        border-bottom: 0 !important;
+        padding-bottom: 2.5mm !important;
+    }
+
+    .report-page .print-report-brand-row {
+        border-bottom: 0 !important;
+        padding-bottom: 1.8mm !important;
+    }
+
+    .report-page .report-identity {
+        border: 1px solid #d2d2d2 !important;
+        border-left: 1px solid #d2d2d2 !important;
+    }
+
+    .report-page [aria-label="Ringkasan laporan pemeriksaan"] .card,
+    .report-page [aria-label="Ringkasan laporan AHP"] .card,
+    .report-page [aria-label="Ringkasan laporan TOPSIS"] .card,
+    .report-page [aria-label="Ringkasan laporan peringkat"] .card,
+    .report-page [aria-label="Ringkasan riwayat"] .card,
+    .report-page [aria-label="Ringkasan tindak lanjut"] .card {
+        border: 1px solid #d2d2d2 !important;
+        border-top: 1px solid #d2d2d2 !important;
+    }
+
+    .report-page .report-section .card-header {
+        border-left: 0 !important;
+        border-bottom: 1px solid #d5d5d5 !important;
+        background: #f7f7f7 !important;
+    }
+
+    .report-page [aria-labelledby="top-priority-title"] {
+        border-left: 1px solid #cfcfcf !important;
+    }
+
+    .report-page .report-final-section > h3,
+    .report-page .report-final-section > .d-flex h3 {
+        border-bottom: 1px solid #cfcfcf !important;
+    }
+
+    /* Status menjadi teks biasa, bukan kotak seperti tombol. */
+    .report-page .badge,
+    .report-page .status-badge,
+    .report-page .report-identity .badge {
+        display: inline !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        border: 0 !important;
+        border-radius: 0 !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        color: #111111 !important;
+        font-size: inherit !important;
+        font-weight: 700 !important;
+        line-height: inherit !important;
+    }
+
+    /* Jarak status dan keterangannya dibuat ringkas. */
+    .report-page .report-table td .badge + small,
+    .report-page .report-sheet .table td .badge + small {
+        margin-top: 0.5mm !important;
+    }
+
+    /* Garis tabel tetap ada tetapi lebih halus agar tidak terasa kotak-kotak. */
+    .report-page .report-table th,
+    .report-page .report-table td,
+    .report-page .report-sheet .table th,
+    .report-page .report-sheet .table td {
+        border-color: #c4c4c4 !important;
+    }
+
+    .report-page .report-table thead th,
+    .report-page .report-sheet .table thead th {
+        border-bottom-color: #999999 !important;
+    }
+}
